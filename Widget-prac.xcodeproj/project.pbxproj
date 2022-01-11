@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637D878B278DF6D800359073 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D878A278DF6D800359073 /* HealthKit.framework */; };
+		637D8792278DF8A600359073 /* SomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8791278DF8A600359073 /* SomeViewModel.swift */; };
+		637D8794278DF8B500359073 /* SomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8793278DF8B500359073 /* SomeHelper.swift */; };
 		638883F3278D293900D0D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F2278D293900D0D1AC /* AppDelegate.swift */; };
 		638883F5278D293900D0D1AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F4278D293900D0D1AC /* SceneDelegate.swift */; };
 		638883F7278D293900D0D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F6278D293900D0D1AC /* ViewController.swift */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		637D8788278DF6D800359073 /* Widget-prac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Widget-prac.entitlements"; sourceTree = "<group>"; };
+		637D878A278DF6D800359073 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		637D8791278DF8A600359073 /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
+		637D8793278DF8B500359073 /* SomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeHelper.swift; sourceTree = "<group>"; };
 		638883EF278D293900D0D1AC /* Widget-prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget-prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638883F2278D293900D0D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638883F4278D293900D0D1AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637D878B278DF6D800359073 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		637D8789278DF6D800359073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637D878A278DF6D800359073 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637D878C278DF7C600359073 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				637D8793278DF8B500359073 /* SomeHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		637D878D278DF7D000359073 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				638883F2278D293900D0D1AC /* AppDelegate.swift */,
+				638883F4278D293900D0D1AC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		637D878E278DF81400359073 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				638883F6278D293900D0D1AC /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		637D878F278DF83200359073 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				637D8791278DF8A600359073 /* SomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		637D8790278DF84200359073 /* AppShared */ = {
+			isa = PBXGroup;
+			children = (
+				637D8788278DF6D800359073 /* Widget-prac.entitlements */,
+				638883F8278D293900D0D1AC /* Main.storyboard */,
+				638883FE278D293C00D0D1AC /* Assets.xcassets */,
+				63888400278D293C00D0D1AC /* LaunchScreen.storyboard */,
+				63888403278D293C00D0D1AC /* Info.plist */,
+				638883FB278D293900D0D1AC /* Widget_prac.xcdatamodeld */,
+			);
+			path = AppShared;
+			sourceTree = "<group>";
+		};
 		638883E6278D293900D0D1AC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +147,7 @@
 				6388840B278D293C00D0D1AC /* Widget-pracTests */,
 				63888415278D293C00D0D1AC /* Widget-pracUITests */,
 				638883F0278D293900D0D1AC /* Products */,
+				637D8789278DF6D800359073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +164,11 @@
 		638883F1278D293900D0D1AC /* Widget-prac */ = {
 			isa = PBXGroup;
 			children = (
-				638883F2278D293900D0D1AC /* AppDelegate.swift */,
-				638883F4278D293900D0D1AC /* SceneDelegate.swift */,
-				638883F6278D293900D0D1AC /* ViewController.swift */,
-				638883F8278D293900D0D1AC /* Main.storyboard */,
-				638883FE278D293C00D0D1AC /* Assets.xcassets */,
-				63888400278D293C00D0D1AC /* LaunchScreen.storyboard */,
-				63888403278D293C00D0D1AC /* Info.plist */,
-				638883FB278D293900D0D1AC /* Widget_prac.xcdatamodeld */,
+				637D8790278DF84200359073 /* AppShared */,
+				637D878F278DF83200359073 /* ViewModel */,
+				637D878E278DF81400359073 /* Views */,
+				637D878D278DF7D000359073 /* App */,
+				637D878C278DF7C600359073 /* Helpers */,
 			);
 			path = "Widget-prac";
 			sourceTree = "<group>";
@@ -262,6 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				638883F7278D293900D0D1AC /* ViewController.swift in Sources */,
+				637D8794278DF8B500359073 /* SomeHelper.swift in Sources */,
+				637D8792278DF8A600359073 /* SomeViewModel.swift in Sources */,
 				638883FD278D293900D0D1AC /* Widget_prac.xcdatamodeld in Sources */,
 				638883F3278D293900D0D1AC /* AppDelegate.swift in Sources */,
 				638883F5278D293900D0D1AC /* SceneDelegate.swift in Sources */,
@@ -441,17 +503,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Widget-prac/AppShared/Widget-prac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BS4YM2JJ65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget-prac/Info.plist";
+				INFOPLIST_FILE = "Widget-prac/AppShared/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,17 +534,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Widget-prac/AppShared/Widget-prac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BS4YM2JJ65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Widget-prac/Info.plist";
+				INFOPLIST_FILE = "Widget-prac/AppShared/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
