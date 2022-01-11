@@ -10,6 +10,8 @@
 		637D878B278DF6D800359073 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D878A278DF6D800359073 /* HealthKit.framework */; };
 		637D8792278DF8A600359073 /* SomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8791278DF8A600359073 /* SomeViewModel.swift */; };
 		637D8794278DF8B500359073 /* SomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8793278DF8B500359073 /* SomeHelper.swift */; };
+		637D8797278DFC9000359073 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8796278DFC9000359073 /* Activity.swift */; };
+		637D8799278DFFA100359073 /* HealthStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D8798278DFFA100359073 /* HealthStat.swift */; };
 		638883F3278D293900D0D1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F2278D293900D0D1AC /* AppDelegate.swift */; };
 		638883F5278D293900D0D1AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F4278D293900D0D1AC /* SceneDelegate.swift */; };
 		638883F7278D293900D0D1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638883F6278D293900D0D1AC /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		637D878A278DF6D800359073 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		637D8791278DF8A600359073 /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
 		637D8793278DF8B500359073 /* SomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeHelper.swift; sourceTree = "<group>"; };
+		637D8796278DFC9000359073 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		637D8798278DFFA100359073 /* HealthStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStat.swift; sourceTree = "<group>"; };
 		638883EF278D293900D0D1AC /* Widget-prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget-prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638883F2278D293900D0D1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638883F4278D293900D0D1AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +144,15 @@
 			path = AppShared;
 			sourceTree = "<group>";
 		};
+		637D8795278DFC7C00359073 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				637D8796278DFC9000359073 /* Activity.swift */,
+				637D8798278DFFA100359073 /* HealthStat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		638883E6278D293900D0D1AC = {
 			isa = PBXGroup;
 			children = (
@@ -165,9 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				637D8790278DF84200359073 /* AppShared */,
+				637D878D278DF7D000359073 /* App */,
+				637D8795278DFC7C00359073 /* Model */,
 				637D878F278DF83200359073 /* ViewModel */,
 				637D878E278DF81400359073 /* Views */,
-				637D878D278DF7D000359073 /* App */,
 				637D878C278DF7C600359073 /* Helpers */,
 			);
 			path = "Widget-prac";
@@ -323,8 +337,10 @@
 			files = (
 				638883F7278D293900D0D1AC /* ViewController.swift in Sources */,
 				637D8794278DF8B500359073 /* SomeHelper.swift in Sources */,
+				637D8797278DFC9000359073 /* Activity.swift in Sources */,
 				637D8792278DF8A600359073 /* SomeViewModel.swift in Sources */,
 				638883FD278D293900D0D1AC /* Widget_prac.xcdatamodeld in Sources */,
+				637D8799278DFFA100359073 /* HealthStat.swift in Sources */,
 				638883F3278D293900D0D1AC /* AppDelegate.swift in Sources */,
 				638883F5278D293900D0D1AC /* SceneDelegate.swift in Sources */,
 			);
